@@ -1,0 +1,16 @@
+{% with messages= get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+    <p>{{message}}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<form action="/actualizado" method="POST">
+    <input type="text" name="nombre" placeholder="nombre">
+    <input type="text" name="apellidos" placeholder="apellidos">
+    <input type="text" name="direccion" placeholder="direccion">
+    <input type="number" name="codigo" placeholder="codigo">
+    <button type="submit">
+        actualizar
+    </button>
+</form>

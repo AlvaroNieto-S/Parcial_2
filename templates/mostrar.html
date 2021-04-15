@@ -1,0 +1,28 @@
+{% with messages= get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+    <p>{{message}}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<body>
+    <h1>mostrando factura</h1>
+    <p>id : {{factura['id']}}</p>
+    <p>total: {{factura['total']}}</p>
+    <p>fecha: {{factura['fecha']}}</p>
+    <p>informacion del cliente: {{factura['cliente']}}</p>
+    <p>paquetes: {{factura['paquete']}}</p>
+</body>
+<form action="/agregar_paquete">
+    <button type="submit">
+        agregar paquete
+    </button>
+</form>
+<form action="/eliminar_paquete">
+    <button type="submit">
+        eliminar paquete
+    </button>
+</form>
+
+
+

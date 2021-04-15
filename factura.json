@@ -1,0 +1,15 @@
+{
+    "id": 3,
+    "total": 11350,
+    "fecha": "2021-04-14",
+    "cliente": {
+        "id": 1,
+        "nombre": "jhonny erique",
+        "apellidos": "Castellon Castellon ",
+        "direccion": "Aqui",
+        "cod_postal": 123412
+    },
+    "paquete": [
+        "silla"
+    ]
+}
